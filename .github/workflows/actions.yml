@@ -10,9 +10,11 @@ jobs:
         id: greet
         uses: actions/hello-world-javascript-action@v1.1
         with:
-          who-to-greet: Sudhakar
+          who-to-greet: Sudhakar 
       - name: Log Greeting Time
-        run: echo "${{ steps.greet.outputs.time }}"
+        env:
+          output: "${{ steps.greet.outputs.time }}"
+        run: echo "$output"
       - name: Set the value
         id: step_one
         run: echo "action_state=yellow" >> "$GITHUB_ENV"
