@@ -6,18 +6,22 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: List Files
+        run: |
+          pwd
+          ls
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: List files after checkout
+        run: |
+          pwd
+          ls -a
       - name: Simple JS actions
         id: greet
         uses: actions/hello-world-javascript-action@v1.1
         with:
-          who-to-greet: Sudhakar 
+          who-to-greet: Sudhakar
       - name: Log Greeting Time
         env:
           output: "${{ steps.greet.outputs.time }}"
         run: echo "$output"
-      - name: Set the value
-        id: step_one
-        run: echo "action_state=yellow" >> "$GITHUB_ENV"
-      - name: Use the value
-        id: step_two
-        run: printf '%s\n' "$action_state" # This will output 'yellow'
