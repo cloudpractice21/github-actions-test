@@ -15,8 +15,7 @@ jobs:
         run: echo "${{ steps.greet.outputs.time }}"
       - name: Set the value
         id: step_one
-        run: |
-        echo "action_state=yellow" >> "$GITHUB_ENV"
+        run: echo "action_state=yellow" >> "$GITHUB_ENV"
       - name: Use the value
         id: step_two
         run: |
