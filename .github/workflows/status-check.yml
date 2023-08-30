@@ -7,7 +7,7 @@ jobs:
     runs-on: ubunut-latest
     steps:
       - name: step111
-        run: sleep 1
+        run: sleep 0
       - name: Runs on failure
         if: failure()
         run: echo "Runs only on failure"
