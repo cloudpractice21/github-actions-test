@@ -6,7 +6,7 @@ job
   job1:
     runs-on: ubunut-latest
     steps:
-      - name: step1
+      - name: step111
         run: sleep 20
       - name: Runs on failure
         if: failure()
