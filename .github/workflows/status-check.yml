@@ -7,7 +7,7 @@ jobs:
     runs-on: ubunut-latest
     steps:
       - name: step111
-        run: sleep 20
+        run: sleep 1
       - name: Runs on failure
         if: failure()
         run: echo "Runs only on failure"
@@ -23,7 +23,7 @@ jobs:
       
   job2:
     runs-on: ubuntu-latest
-  #  needs: job1
-  #  if: failure()
+    needs: job1
+    if: failure()
     steps:
       - run: echo "Job2"
