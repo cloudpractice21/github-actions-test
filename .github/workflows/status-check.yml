@@ -6,6 +6,10 @@ jobs:
   job1:
     runs-on: ubunut-latest
     steps:
+      - name: Step1
+        run: sleep 10
+      - name: Fail
+        run: exit 1
       - name: Runs on failure
         if: failure()
         run: echo "Runs only on failure"
