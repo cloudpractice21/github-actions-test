@@ -6,6 +6,8 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
+      - name: Stepl
+        run: sleep 10
       - name: Fail
         run: exit 1
       - name: Runs on failure
