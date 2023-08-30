@@ -2,7 +2,7 @@ name: Status Check Functions
 
 on: [push]
 
-job
+jobs:
   job1:
     runs-on: ubunut-latest
     steps:
