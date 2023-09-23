@@ -19,7 +19,6 @@ jobs:
             experimental: true
           - os: ubuntu-latest
             node-version: 17
-            experimental: true
         exclude:
           - os: ubuntu-latest
             node-version: 14
