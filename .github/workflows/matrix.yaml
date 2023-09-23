@@ -26,7 +26,7 @@ jobs:
         #max-parallel: 3
     runs-on: ${{ matrix.os }}
     steps:
-      - if: matrix.experimental == ture
+      - if: matrix.experimental == true
         run: exit 1
       - run: node -v
       - run: echo '${{ toJson(matrix) }}'
