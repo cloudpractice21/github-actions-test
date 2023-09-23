@@ -21,8 +21,7 @@ jobs:
         exclude:
           - os: ubuntu-latest
             node-vesion: 14
-
-      fail-fase: false
+      fail-false: false
         #max-parallel: 3
     runs-on: ${{ matrix.os }}
     steps:
