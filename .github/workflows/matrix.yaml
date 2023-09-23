@@ -19,7 +19,7 @@ jobs:
           - os: ubuntu-latest
             node-version: 17
         exclude:
-          - os: ubuntu-latest:
+          - os: ubuntu-latest
             node-vesion: 14
 
       fail-fase: false
