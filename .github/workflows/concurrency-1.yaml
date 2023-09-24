@@ -1,4 +1,4 @@
-name: Concurrency 1
+name: Concurrency1
 on:
   workflow_dispatch:
     inputs:
