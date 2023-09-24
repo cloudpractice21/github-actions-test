@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        desription: "Environment"
+        description: "Environment"
         type: environment
         required: true
 
