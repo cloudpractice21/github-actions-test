@@ -29,5 +29,6 @@ jobs:
   sleep:
     runs-on: ubuntu-latest
     steps:
-      - name: dispmsg
-        run: echo "${{ github.event.inputs.name }}"
+      - run: sleep 30
+      #- name: dispmsg
+      #  run: echo "${{ github.event.inputs.name }}"
