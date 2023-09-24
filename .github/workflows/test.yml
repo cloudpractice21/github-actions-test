@@ -1,0 +1,8 @@
+name: Testworkflow
+on: [push]
+
+jobs:
+  testjob:
+    runs-on: ubunut-latest
+    steps:
+      - run: echo "test workflow"
