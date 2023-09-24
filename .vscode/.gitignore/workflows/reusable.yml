@@ -25,10 +25,3 @@ jobs:
         run: echo '{{ toJSON(github) }}'
       - name: Disp name access-token secret
         run: echo '{{ secrets.access-token }}'
-      
-
-
-
-      default:
-      required:
-    
