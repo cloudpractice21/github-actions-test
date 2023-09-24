@@ -3,6 +3,6 @@ on: [push]
 
 jobs:
   testjob:
-    runs-on: ubunut-latest
+    runs-on: ubuntu-latest
     steps:
       - run: echo "test workflow"
