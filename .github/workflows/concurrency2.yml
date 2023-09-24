@@ -10,8 +10,9 @@ on:
         - monalisa
         - cschleiden
       environment:    
-        type: environment
+        type: choice
         required: true
+        description: environment
         options: 
         - Production
         - Staging
