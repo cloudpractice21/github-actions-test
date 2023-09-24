@@ -3,12 +3,17 @@ name: Concurrency 2
 on:
   workflow_dispatch:
     inputs:
-      environment:
-        description: "Environment"
+      name:
+        type: choice
+        description: Who to greet
+        options: 
+        - monalisa
+        - cschleiden
+      environment:    
         type: environment
         
 
-concurrency:
+#concurrency:
   #group: ${{ github.workflow }}-${{ github.event.inputs.environment }}
   #cancel-in-progress: true
 jobs:
