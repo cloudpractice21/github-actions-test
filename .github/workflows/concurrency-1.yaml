@@ -2,10 +2,11 @@ name: Concurrency 1
 on:
   workflow_dispatch:
     inputs:
-      enviroment:
+      environment:
         desription: "Environment"
         type: environment
         required: true
+        
 Jobs:
   sleep:
     runs-on: ubuntu-latest
