@@ -6,8 +6,8 @@ on:
         desription: "Environment"
         type: environment
         required: true
-        
-Jobs:
+
+jobs:
   sleep:
     runs-on: ubuntu-latest
     steps:
