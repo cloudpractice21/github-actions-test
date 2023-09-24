@@ -1,9 +1,8 @@
 name: Concurrencytest
 on:
-  push:
+  workflow_dispatch:
     branches:
       - main
-  workflow_dispatch:
     inputs:
       environment:
         description: 'Environment'
