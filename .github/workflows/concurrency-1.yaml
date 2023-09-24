@@ -6,7 +6,6 @@ on:
         desription: "Environment"
         type: environment
         required: true
-
 Jobs:
   sleep:
     runs-on: ubuntu-latest
