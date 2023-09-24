@@ -11,6 +11,12 @@ on:
         - cschleiden
       environment:    
         type: environment
+        required: true
+        options: 
+        - Production
+        - Staging
+
+      
         
 
 #concurrency:
