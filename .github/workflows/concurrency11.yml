@@ -1,0 +1,33 @@
+name: Concurrency 11
+run-name: Concurrency 11 (${{ inputs.environment }})
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        type: choice
+        description: Who to greet
+        options: 
+        - monalisa
+        - cschleiden
+      environment:    
+        type: choice
+        required: true
+        description: environment
+        options: 
+        - Production
+        - Staging
+
+      
+        
+
+concurrency: 
+  group: ${{ github.workflow }}-${{ github.event.inputs.environment }}
+  #group: Concurrency-11
+  cancel-in-progress: true
+  #cancel-in-progress: true
+jobs:
+  sleep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: dispmsg
+        run: echo "${{ github.event.inputs.name }}"
