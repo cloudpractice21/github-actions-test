@@ -1,0 +1,8 @@
+name: TestMainbranch
+on: [push]
+
+jobs:
+  testbranch:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Test Manin Branch"
